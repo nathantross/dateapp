@@ -170,13 +170,14 @@ input {
   li {
     overflow: auto;
     padding: 10px 0;
-    border-top: 1px solid #333;
     &:last-child {
-      border-bottom: 1px solid #333;
     }
   }
 }
 
+.users { 
+  text-align: center;
+}
 
 
 

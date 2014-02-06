@@ -1,8 +1,20 @@
-<li>
-  <%= gravatar_for user, size: 52 %>
-  <%= link_to user.name, user %>
+<row>
+<div class="col-md-4"></div>
+    	<div class="col-md-4"><li class="text-center"><%= gravatar_for user, size: 300 %></li></div>
+    	<div class="col-md-4"></div>
+</row>
+<row>
+	<div class="col-md-12 text-center">
+     <h2> <%= link_to user.name, user %></h2>
+     <%= link_to "No", users_path %>
+     <%= link_to "Yes", user %>
+ </div>
+</row>
+<row>
+	<div class="col-md-12">
   <% if current_user.admin? && !current_user?(user) %>
-    | <%= link_to "delete", user, method: :delete,
+    <%= link_to "delete", user, method: :delete,
                                   data: { confirm: "You sure?" } %>
   <% end %>
-</li>
+	</div>
+</row>
