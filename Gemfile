@@ -12,6 +12,10 @@ gem 'will_paginate', '3.0.4'
 
 gem 'bootstrap-will_paginate', '0.0.9'
 
+# Image Manipulation
+gem "paperclip", "~> 3.0"
+gem "rmagick", "~> 2.13.2"
+
 
 # Use sqlite3 as the database for Active Record
 group :development, :test do
@@ -44,8 +48,6 @@ gem 'uglifier', '2.1.1'
 gem 'coffee-rails', '4.0.1'
 
 
-# Added for image manipulation
-gem 'rmagick'
 
 
 

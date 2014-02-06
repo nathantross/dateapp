@@ -1,6 +1,9 @@
 class User < ActiveRecord::Base
   has_many :microposts, dependent: :destroy
 
+  has_attached_file :avatar, :styles => { :medium => "300x300>", :thumb => "100x100>" }, :default_url => "http://www.spatch.net/cattown/cat-businessman.jpg"
+  validates_attachment_content_type :avatar, :content_type => /\Aimage\/.*\Z/
+
   before_save { self.email = email.downcase }
   before_create :create_remember_token
   validates :name, presence: true, length: { maximum: 50 }
