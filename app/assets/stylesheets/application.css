@@ -18,6 +18,22 @@
  border: 2px #000;
 }
 
-.bodycolor {
-  background-color: green;
+
+
+#body {
+	background-color: #5bc0de;
+	font-family: 'Raleway', sans-serif;
+	color: #003366;
+}
+
+#border {
+	border-style:solid;
+	border-width:5px;
+	background-color: #fff;
+}
+
+
+#size {
+	width: 300px;
+	height: 300px;
 }
