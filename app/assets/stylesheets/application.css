@@ -12,3 +12,12 @@
  *= require_tree .
 
  */
+
+
+ #border {
+ border: 2px #000;
+}
+
+.bodycolor {
+  background-color: green;
+}
