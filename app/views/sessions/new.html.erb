@@ -13,19 +13,17 @@
 <div class="row">
   <div class="col-md-4"></div>
   <div class="col-md-4">
-    <form role="form">
     <div class="form-group">
     <%= form_for(:session, url: sessions_path) do |f| %>
 
-<div class="form-group">
+
       <%= f.label :email %>
       <%= f.text_field :email, class: "form-group form-control"  %>
-      </div>
-<div class="form-group">
+
+
       <%= f.label :password %>
       <%= f.password_field :password, class: "form-group form-control" %>
-    </div>
-    <div class="form-group">
+
 
       <%= f.submit "Sign in", class: "btn btn-large btn-primary form-control" %>
     <% end %>
@@ -34,4 +32,6 @@
 
     <p>New user? <%= link_to "Sign up now!", signup_path %></p>
   </div>
+</div>
+</div>
 </div>

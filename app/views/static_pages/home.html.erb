@@ -9,17 +9,35 @@
 
 <% else %>
 
-  <div class="center hero-unit">
 
-    <h1>Welcome to Joiyn</h1>
-    <i class="fa fa-heart fa-5x"></i>
-    <h2>
-      The dating app for professionals.
-    </h2>
 
-    <%= link_to "Start Dating!", signup_path,
-                                class: "btn btn-primary btn-lg" %>
-  </div>
+<div class="row" >
+  <div class="col-md-2"></div>
+  <div class="col-md-8 text-center"><h1>Welcome to Joiyn</h1></div>
+  <div class="col-md-2"></div>
+</div>
+
+<div class="row" >
+  <div class="col-md-2"></div>
+  <div class="col-md-8 text-center"><i class="fa fa-heart fa-5x"></i></div>
+  <div class="col-md-2"></div>
+</div>
+<br>
+
+<div class="row" >
+  <div class="col-md-2"></div>
+  <div class="col-md-8 text-center"><h3>The dating app for professionals</h3></div>
+  <div class="col-md-2"></div>
+</div>
+
+<br>
+
+<div class="row" >
+  <div class="col-md-2"></div>
+  <div class="col-md-8 text-center"><%= link_to "Start Dating!", signup_path, class: "btn btn-primary btn-lg" %></div>
+  <div class="col-md-2"></div>
+</div>
+
 
 
 <% end %>

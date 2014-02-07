@@ -1,8 +1,18 @@
 <% provide(:title, "Edit user") %>
-<h1>Update your profile</h1>
+<div class="row">
+  <div class="col-md-4 "></div>
+  <div class="col-md-4 text-center">
+  <h1>Update your Profile</h1>
+</div>
+<div class="col-md-4">
+  </div>
+</div>
+</div>
 
 <div class="row">
-  <div class="span6 offset3">
+  <div class="col-md-4"></div>
+  <div class="col-md-4">
+    <div class="form-group">
     <%= form_for(@user) do |f| %>
 
 
@@ -11,8 +21,8 @@
       <%= f.submit "Save changes", class: "btn btn-large btn-primary" %>
     <% end %>
 
-    <%= gravatar_for(@user) %>
-    <a href="http://gravatar.com/emails">change</a>
+
   </div>
 </div>
-
+</div>
+</div>
