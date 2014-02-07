@@ -27,12 +27,19 @@
                 <li>
                   <%= link_to "Sign out", signout_path, method: "delete" %>
                 </li>
-              </ul>
+
+
             </li>
           <% else %>
             <li><%= link_to "Sign in", signin_path %></li>
           <% end %>
         </li>
+        <li>
+                 <% if current_user %>
+          <li></li>
+        <% else %>
+          <%= link_to "Sign in with linkedin", "/auth/linkedin" %>
+        <% end %></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

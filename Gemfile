@@ -17,6 +17,10 @@ gem "paperclip", "~> 3.0"
 gem "rmagick", "~> 2.13.2"
 
 
+gem 'omniauth'
+gem 'omniauth-linkedin'
+
+
 # Use sqlite3 as the database for Active Record
 group :development, :test do
   gem 'sqlite3', '1.3.8'

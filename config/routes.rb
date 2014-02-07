@@ -8,7 +8,7 @@ DateApplication::Application.routes.draw do
   match '/signin',  to: 'sessions#new',         via: 'get'
   match '/signout', to: 'sessions#destroy',     via: 'delete'
 
-
+  get "/auth/:provider/callback" => "sessions#create"
 
   # get '/signup', to: 'users#new', via: 'get'
   # get '/signin', to: 'sessions#new', via: 'get'
