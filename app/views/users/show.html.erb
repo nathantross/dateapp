@@ -1,26 +1,38 @@
 <% provide(:title, @user.name) %>
+
 <div class="row">
-  <aside class="span4">
-    <section>
-      <h1>
-        <%= gravatar_for @user %>
-        <%= @user.name %>
-        <br>
-        <%= @user.title %>
+  <div class="large-4 columns"></div>
+  <div class="large-4 large-centered columns"><a class="th" href="../img/demos/demo2.png">
+  <%= image_tag @user.avatar.url(:thumb) %></a></div>
+  <div class="large-4 columns"></div>
+</div>
 
-      </h1>
-    </section>
+<div class="row" >
+  <div class="large-4 columns"></div>
+  <div class="large-4 large-centered columns"><h3><%= @user.name %></h3></div>
+  <div class="large-4 columns"></div>
+</div>
 
-<%= image_tag @user.avatar.url(:medium) %>
+<div class="row">
+  <div class="large-4 columns"></div>
+  <div class="large-4 large-centered columns"><h3><%= @user.title %></h3></div>
+  <div class="large-4 columns"></div>
+</div>
+
+<div class="row">
+  <div class="large-4 columns"></div>
+  <div class="large-4 large-centered columns">
+      <% if current_user = user_path %>
+        <button>Contact <%= @user.name %></button>
+      <% else %>
+       <button>Edit Profile</button>
+      <% end %>
+  </div>
+  <div class="large-4 columns"></div>
+</div>
+<%= gravatar_for @user %>
+
 <br>
-
-<% if current_user = user_path %>
-  <button>Contact <%= @user.name %></button>
-
-  <% else %>
-  <button>Edit Profile</button>
-<% end %>
-
 
   </div>
 </div>
